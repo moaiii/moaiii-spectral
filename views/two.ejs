@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <% include partials/header %>
+
+  <body>
+    <div class="canvas-container">
+      <video src="<%= song_video %>" class="video-layer layer-2" id="layer2" muted nocontrols autoplay></video>
+      <div class="grey-filter"></div>
+      <div class="canvas-layer layer1" id="layer1"></div>
+    </div>
+
+    <% include partials/framework %>
+
+    <% include partials/share %>
+
+    <% include partials/scripts %>
+
+  </body>
+
+</html>
+
+<% include partials/filters %>

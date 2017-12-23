@@ -1,0 +1,44 @@
+<div class="framework">
+
+  <div class="volume-controls">
+    <i class="fa fa-volume-up fa-2x volume-button volume-on" aria-hidden="true" id="volume-on"></i>
+    <i class="fa fa-volume-off fa-2x volume-button volume-off hidden" aria-hidden="true" id="volume-off"></i>
+  </div>
+  <div class="menu-controls">
+    <i class="fa fa-bars menu-button menu-open" aria-hidden="true" id="menu-open"></i>
+    <i class="fa fa-times menu-button menu-close hidden" aria-hidden="true" id="menu-closed"></i>
+  </div>
+  <div class="navigation">
+    <a class="nav-arrow nav-back" href="<%= song_previous %>" data-target="song-left" id="nav-previous">
+        <% include arrow-svg-left %>
+        <p class="song-title left" id="song-left"><%= song_previous %></p>
+    </a>
+    <h1 class="moai-header"><%= song_name %></h1>
+    <a class="nav-arrow nav-next" href="<%= song_next %>" data-target="song-right" id="nav-next">
+      <p class="song-title right" id="song-right"><%= song_next %></p>
+      <% include arrow-svg-right %>
+    </a>
+  </div>
+  <div class="menu-page" id="menu-page">
+    <div class="menu-inner-container" id="menu-content">
+      <div class="menu-item">
+        <h2>About</h2>
+        <div class="menu-about-content">
+          <p>
+            My name is chris and im a maker of things.
+          </p>
+          <p>
+            Contact me at:
+          </p>
+          <a href="mailto:christophermelville@me.com">
+            christophermelville@me.com
+          </a>
+        </div>
+        <h2>Facebook</h2>
+        <h2>Soundcloud</h2>
+        <h2>Twitter</h2>
+        <h2>YouTube</h2>
+      </div>
+    </div>
+  </div>
+</div>

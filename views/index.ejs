@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <% include partials/header %>
+
+  <body>
+    <video
+      muted nocontrols autoplay loop 
+      src="<%= song_video %>" 
+      class="video-layer layer-2" 
+      id="layer2">
+    </video>
+
+    <div class="framework">
+
+      <div class="main-header">
+        <h1 class="main-logo"><%= title %></h1>
+        <p class="main-headline"><%= headline%></p>
+      </div>
+    </div>
+
+      <% include partials/share %>
+
+    <% include partials/scripts %>
+
+  </body>
+
+</html>
+
+<% include partials/filters %>
