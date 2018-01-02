@@ -4,9 +4,9 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'moai',
-    song_video: 'video/index.mp4',
-    headline: 'Whats the world with no soul?'
+    title: 'SPECTRAL',
+    headline: 'by Moai',
+    song_video: '/public/video/index.mp4'
   });
 });
 

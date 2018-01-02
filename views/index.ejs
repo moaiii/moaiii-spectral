@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
   <% include partials/header %>
-
   <body>
     <video
       muted nocontrols autoplay loop 
@@ -10,21 +8,14 @@
       class="video-layer layer-2" 
       id="layer2">
     </video>
-
     <div class="framework">
-
       <div class="main-header">
-        <h1 class="main-logo"><%= title %></h1>
-        <p class="main-headline"><%= headline%></p>
+        <a href="/song/1">
+          <h1 class="main-logo"><%= title %></h1>
+          <p class="main-headline"><%= headline%></p>
+        </a>
       </div>
     </div>
-
-      <% include partials/share %>
-
     <% include partials/scripts %>
-
   </body>
-
 </html>
-
-<% include partials/filters %>

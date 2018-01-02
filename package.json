@@ -3,13 +3,21 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "browserify public/js/modules/main.js -o public/js/bundle.js",
+    "start": "concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
+    "start:server": "nodemon ./bin/www",
+    "start:js": "npm run watch",
+    "start:styles": "gulp",
+    "watch": "watchify public/js/modules/init.js -o public/js/bundle.js --debug --verbose"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
     "body-parser": "~1.15.2",
+    "concurrently": "^3.5.1",
     "cookie-parser": "~1.4.3",
+    "cross-spawn": "^5.1.0",
     "debug": "~2.2.0",
+    "dotenv": "^4.0.0",
     "ejs": "~2.5.2",
     "express": "~4.14.0",
     "gulp-autoprefixer": "^3.1.1",
@@ -22,11 +30,18 @@
     "gulp-nodemon": "^2.2.1",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
     "jshint": "^2.9.4",
     "morgan": "~1.7.0",
+    "nodemon": "^1.14.3",
     "postcss-scss": "^0.4.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

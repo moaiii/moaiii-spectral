@@ -1,43 +1,91 @@
-<div class="framework">
-
+<div class="framework" id="framework">
+  
   <div class="volume-controls">
-    <i class="fa fa-volume-up fa-2x volume-button volume-on" aria-hidden="true" id="volume-on"></i>
-    <i class="fa fa-volume-off fa-2x volume-button volume-off hidden" aria-hidden="true" id="volume-off"></i>
+    <i class="fa fa-volume-up fa-2x volume-button volume-on" 
+      id="volume-on">
+    </i>
+    <i class="fa fa-volume-off fa-2x volume-button volume-off hidden" 
+      id="volume-off">
+    </i>
   </div>
+
+  <div class="empty"></div>
+  
   <div class="menu-controls">
-    <i class="fa fa-bars menu-button menu-open" aria-hidden="true" id="menu-open"></i>
-    <i class="fa fa-times menu-button menu-close hidden" aria-hidden="true" id="menu-closed"></i>
+    <i class="fa fa-bars menu-button menu-open"
+      id="menu-open">
+    </i>
+    <i class="fa fa-times menu-button menu-close hidden" 
+      id="menu-closed">
+    </i>
   </div>
-  <div class="navigation">
-    <a class="nav-arrow nav-back" href="<%= song_previous %>" data-target="song-left" id="nav-previous">
-        <% include arrow-svg-left %>
-        <p class="song-title left" id="song-left"><%= song_previous %></p>
-    </a>
-    <h1 class="moai-header"><%= song_name %></h1>
-    <a class="nav-arrow nav-next" href="<%= song_next %>" data-target="song-right" id="nav-next">
-      <p class="song-title right" id="song-right"><%= song_next %></p>
-      <% include arrow-svg-right %>
+  
+  <div class="nav-back">
+    <a class="nav-arrow" 
+      href="<%= song_previous_url %>" 
+      data-target="song-left" 
+      id="nav-previous">
+      <p class="song-title left" id="song-left">
+        <%= song_previous_name %>
+      </p>
+      <i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
     </a>
   </div>
+  
+  <div class="title">
+    <h1 class="moai-header">
+      <%= song_name %>
+    </h1>
+  </div>
+
+  <div class="nav-next">
+    <a class="nav-arrow" 
+      href="<%= song_next_url %>" 
+      data-target="song-right" id="nav-next">
+      <p class="song-title right" id="song-right">
+        <%= song_next_name %>
+      </p>
+      <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+  
+  <div class="share-container">
+    <a href="https://www.soundcloud.com/moai_music" target="blank">
+      <i class="share-icon fa fa-soundcloud"></i>
+    </a>
+    <a href="https://www.facebook.com/MOAImusic" target="blank">
+      <i class="share-icon fa fa-facebook-square"></i>
+    </a>
+    <a href="https://twitter.com/___moaiii" target="blank">
+      <i class="share-icon fa fa-twitter"></i>
+    </a>
+    <a href="https://www.youtube.com/user/MrMelvi87" target="blank">
+      <i class="share-icon fa fa-youtube-play"></i>
+    </a>
+  </div>
+
   <div class="menu-page" id="menu-page">
     <div class="menu-inner-container" id="menu-content">
+      <h1>
+        All music, design and development by Christopher Melville (aka moai)
+      </h1>
       <div class="menu-item">
-        <h2>About</h2>
-        <div class="menu-about-content">
-          <p>
-            My name is chris and im a maker of things.
-          </p>
-          <p>
-            Contact me at:
-          </p>
-          <a href="mailto:christophermelville@me.com">
-            christophermelville@me.com
-          </a>
-        </div>
-        <h2>Facebook</h2>
-        <h2>Soundcloud</h2>
-        <h2>Twitter</h2>
-        <h2>YouTube</h2>
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <a href="http://www.christophermelville.com/" target="blank">
+          www.christophermelville.com
+        </a>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-at" aria-hidden="true"></i>
+        <a href="mailto:christophermelville@me.com" target="blank">
+          christopher.melville@me.com
+        </a>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-code" aria-hidden="true"></i>
+        <a href="https://goo.gl/DhWUh8" target="blank">
+          online cv
+        </a>
       </div>
     </div>
   </div>
