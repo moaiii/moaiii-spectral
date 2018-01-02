@@ -19,18 +19,15 @@ var initApp = function() { //debugger;
   App.framework = framework;
   
   // Spectrum init
-  // (name, color, size, thickness, bounce, morph)
   var p = getSpectrumParams(); console.log('p', p)
 
   var s1 = new Spectrum('s1', p.colors[0], p.size[0], p.thickness[0], p.bounce[0], p.morph[0]); 
-  App.spectrums.push(s1);
-
   var s2 = new Spectrum('s2', p.colors[1], p.size[1], p.thickness[1], p.bounce[1], p.morph[1]); 
-  App.spectrums.push(s2);
-
   var s3 = new Spectrum('s3', p.colors[2], p.size[2], p.thickness[2], p.bounce[2], p.morph[2]); 
-  App.spectrums.push(s3);
   
+  App.spectrums.push(s1);
+  App.spectrums.push(s2);
+  App.spectrums.push(s3);
 
   // Song init
   App.song = new Song();

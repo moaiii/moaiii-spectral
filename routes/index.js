@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'SPECTRAL',
-    headline: 'by Moai',
+    headline: 'moai',
     song_video: '/public/video/index.mp4'
   });
 });
