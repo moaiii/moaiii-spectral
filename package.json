@@ -5,24 +5,24 @@
   "scripts": {
     "build": "ENV=development browserify -t envify public/js/modules/init.js -o public/js/bundle.js",
     "build:production": "ENV=production browserify -t envify -t uglifyify public/js/modules/init.js -o dist/js/bundle.js; gulp production",
-    
     "start": "concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
     "start:server": "nodemon ./bin/www",
     "start:js": "npm run watch",
     "start:styles": "gulp",
     "start:production": "npm run build:production; npm run start:server",
-    
     "watch": "watchify public/js/modules/init.js -o public/js/bundle.js --debug --verbose"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
     "body-parser": "~1.15.2",
+    "browserify": "^14.5.0",
     "concurrently": "^3.5.1",
     "cookie-parser": "~1.4.3",
     "cross-spawn": "^5.1.0",
     "debug": "~2.2.0",
     "dotenv": "^4.0.0",
     "ejs": "~2.5.2",
+    "envify": "^4.1.0",
     "express": "~4.14.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
@@ -44,6 +44,7 @@
     "postcss-scss": "^0.4.0",
     "serve-favicon": "~2.3.0",
     "uglifyify": "^4.0.5",
+    "watchify": "^3.9.0",
     "yargs": "^10.0.3"
   },
   "devDependencies": {

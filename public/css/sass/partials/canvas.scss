@@ -1,0 +1,227 @@
+//gradients 
+$gradient-vovka-a: #86fde8;
+$gradient-vovka-b: #acb6e5;
+$gradient-lisboa-a: #fdbb2d;
+$gradient-lisboa-b: #22c1c3;
+$gradient-rojo-a: #ff6a00;
+$gradient-rojo-b: #ee0979;
+$gradient-none-a: #666;
+$gradient-none-b: #ccc;
+
+
+@mixin gradient($angle, $color_1, $color_2) {
+  background: $color_1; 
+  background: -webkit-linear-gradient($angle, $color_1 25%, $color_2 75%, white 115%);
+  background: -o-linear-gradient($angle, $color_1 25%, $color_2 75%, white 115%);
+  background: -webkit-gradient(linear, left top, left bottom, from($angle), color-stop(25%, $color_1), color-stop(75%, $color_2), color-stop(115%, white));
+  background: linear-gradient($angle, $color_1 25%, $color_2 75%, white 115%);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-container {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-layer {
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.layer1 {
+  z-index: 10;
+  background-color: none;
+  opacity: 0.6;
+  transition: opacity 5s ease;
+  
+  &.hidden {
+    transition: opacity 5s ease;
+    opacity: 0;
+  }
+}
+
+#defaultCanvas0 {
+  width: 100%;
+  height:100%;
+}
+
+.layer2 {
+  z-index: 9;
+  background-color: blue;
+}
+.layer3 {
+  z-index: 8;
+  background-color: green;
+}
+.layer4 {
+  z-index: 7;
+  background-color: yellow;
+}
+.layer5 {
+  z-index: 6;
+  background-color: orange;
+}
+
+
+.video-layer {
+  display: none;
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  filter: url(#blackandwhite);
+}
+
+.grey-filter {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+.gradient__container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 10;
+
+  div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  // &.animate {
+  //   z-index: 0;
+  //   opacity: 0.8;
+  // }
+}
+
+.gradient_45 {
+  -webkit-animation-name: gradient-rotate;
+          animation-name: gradient-rotate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+  &.--vovka {
+    @include gradient(45deg, $gradient-vovka-a, $gradient-vovka-b);
+  }
+
+  &.--rojo {
+    @include gradient(45deg, $gradient-rojo-a, $gradient-rojo-b);
+  }
+
+  &.--lisboa {
+    @include gradient(45deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  }
+}
+
+.gradient_135 {
+  -webkit-animation-name: gradient-rotate;
+          animation-name: gradient-rotate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+  &.--vovka {
+    @include gradient(135deg, $gradient-vovka-a, $gradient-vovka-b);
+  }
+
+  &.--rojo {
+    @include gradient(135deg, $gradient-rojo-a, $gradient-rojo-b);
+  }
+
+  &.--lisboa {
+    @include gradient(135deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  }
+}
+
+.gradient_225 {
+  -webkit-animation-name: gradient-rotate;
+          animation-name: gradient-rotate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  &.--vovka {
+    @include gradient(225deg, $gradient-vovka-a, $gradient-vovka-b);
+  }
+
+  &.--rojo {
+    @include gradient(225deg, $gradient-rojo-a, $gradient-rojo-b);
+  }
+
+  &.--lisboa {
+    @include gradient(225deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  }
+}
+
+.gradient_315 {
+  -webkit-animation-name: gradient-rotate;
+          animation-name: gradient-rotate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  &.--vovka {
+    @include gradient(315deg, $gradient-vovka-a, $gradient-vovka-b);
+  }
+
+  &.--rojo {
+    @include gradient(315deg, $gradient-rojo-a, $gradient-rojo-b);
+  }
+
+  &.--lisboa {
+    @include gradient(315deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  }
+}
+
+@-webkit-keyframes gradient-rotate {
+  0%   {opacity:1;}
+  25%  {opacity:0.5;}
+  50%  {opacity:0;}
+  75%  {opacity:0.5;}
+  100% {opacity:1;}
+}
+
+@keyframes gradient-rotate {
+  0%   {opacity:1;}
+  25%  {opacity:0.5;}
+  50%  {opacity:0;}
+  75%  {opacity:0.5;}
+  100% {opacity:1;}
+}
