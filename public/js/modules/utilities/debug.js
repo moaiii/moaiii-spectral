@@ -3,7 +3,7 @@
 var App = require('../app');
 
 var Debug = function(/* arguments */) { //debugger;
-  if(App.debug) {
+  if(process.env.ENV === 'development') {
     var prints = Array.from(arguments);
   
     prints.map(function(item, i) {

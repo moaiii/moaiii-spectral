@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const data = require('../public/data/songs');
+var data = require('../public/data/data');
+var config = require('../config'); 
 
 module.exports = function(req, res) { 
   
@@ -28,10 +29,10 @@ module.exports = function(req, res) {
 
   res.render('song', {
     song_name:               data[id].name,
-    song_video:             `video/${current.name}.mp4`,
     song_previous_url:      `${previous_url}`,
     song_previous_name:     `${previous.name}`,
     song_next_url:          `${next_url}`,
-    song_next_name:         `${next.name}`
+    song_next_name:         `${next.name}`,
+    path:                   config.path
   });
 };

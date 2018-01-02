@@ -6,7 +6,7 @@ var Spectrum = require('./spectrum');
 var Sketch = require('./sketch');
 var Debug = require('./utilities/debug');
 var Song = require('./song');
-var data = require('../../data/songs');
+var data = require('../../data/data');
 var getIndex = require('./utilities/getIndex');
 
 
@@ -19,7 +19,9 @@ var initApp = function() { //debugger;
   App.framework = framework;
   
   // Spectrum init
-  var p = getSpectrumParams(); console.log('p', p)
+  var p = getSpectrumParams(); 
+  
+  Debug(p);
 
   var s1 = new Spectrum('s1', p.colors[0], p.size[0], p.thickness[0], p.bounce[0], p.morph[0]); 
   var s2 = new Spectrum('s2', p.colors[1], p.size[1], p.thickness[1], p.bounce[1], p.morph[1]); 

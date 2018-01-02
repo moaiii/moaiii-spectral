@@ -1,9 +1,11 @@
 'use-strict';
 
+require('dotenv').config();
 var App = require('./app');
 var Song = require('./song');
 var Debug = require('./utilities/debug');
 var getIndex = require('./utilities/getIndex');
+
 
 var s = function(sketch) { //debugger;
   var loaded = false;
@@ -11,8 +13,9 @@ var s = function(sketch) { //debugger;
 
   sketch.preload = function() {
     var index = getIndex();
-
-    var url = '/public/audio/' + index + '.mp3';
+    console.log('process.env.ENV', process.env.ENV);
+    var path = process.env.ENV === 'production' ? '/dist' : '/public';
+    var url = path + '/audio/' + index + '.mp3';
     window.thisApp.song.sound = globalP5.loadSound(url);
   };
 

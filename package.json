@@ -3,11 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "browserify public/js/modules/main.js -o public/js/bundle.js",
+    "build": "ENV=development browserify -t envify public/js/modules/init.js -o public/js/bundle.js",
+    "build:production": "ENV=production browserify -t envify -t uglifyify public/js/modules/init.js -o dist/js/bundle.js; gulp production",
+    
     "start": "concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
     "start:server": "nodemon ./bin/www",
     "start:js": "npm run watch",
     "start:styles": "gulp",
+    "start:production": "npm run build:production; npm run start:server",
+    
     "watch": "watchify public/js/modules/init.js -o public/js/bundle.js --debug --verbose"
   },
   "dependencies": {
@@ -39,6 +43,7 @@
     "nodemon": "^1.14.3",
     "postcss-scss": "^0.4.0",
     "serve-favicon": "~2.3.0",
+    "uglifyify": "^4.0.5",
     "yargs": "^10.0.3"
   },
   "devDependencies": {
