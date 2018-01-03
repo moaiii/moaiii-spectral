@@ -24,7 +24,7 @@ var s = function(sketch) { //debugger;
     sketch.frameRate(20);
     window.thisApp.song.play();
   };
-
+  
   sketch.draw = function() {
     if(!loaded) {
       document.getElementById('layer1').classList.remove('hidden');
