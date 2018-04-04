@@ -18,8 +18,12 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/public', express.static(__dirname + '/public'));
-app.use('/dist', express.static(__dirname + '/spectral/dist'));
+
+if(process.env.ENV === 'development') {
+  app.use('/public', express.static(__dirname + '/public'));
+} else {
+  app.use('/public', express.static(__dirname + '/dist'));
+}
 
 app.use(require('./routes/app'));
 

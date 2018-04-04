@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "build": "ENV=development browserify -t envify public/js/modules/init.js -o public/js/bundle.js",
-    "build:production": "ENV=production browserify -t envify -t uglifyify public/js/modules/init.js -o dist/js/bundle.js; gulp production",
     "start": "npm run build; concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
     "start:server": "nodemon ./bin/www",
     "start:js": "npm run watch",
