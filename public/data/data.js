@@ -11,18 +11,7 @@ module.exports = [
     soundcloudUrl: 'https://soundcloud.com/moai_music/intro'
   }, 
   {
-    name: 'rojo',
-    bpm: 120,
-    gradientColors: ['#ff6a00', '#ee0979'],    
-    spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],
-    size: [0.3, 0.15, 0.06], // max 0.3
-    thickness: [1, 0.75, 0.5],
-    bounce: [1, 0.8, 0.7],
-    morph: [5, 20, 1],
-    soundcloudUrl: 'https://soundcloud.com/moai_music/rojo'
-  }, 
-  {
-    name: 'vovka',
+    name: 'boy',
     bpm: 120,
     gradientColors: ['#2657eb', '#de6161'],
     spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],
@@ -33,7 +22,18 @@ module.exports = [
     soundcloudUrl: 'https://soundcloud.com/moai_music/vovka'
   }, 
   {
-    name: 'lisboa',
+    name: 'girl',
+    bpm: 120,
+    gradientColors: ['#ff6a00', '#ee0979'],    
+    spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],
+    size: [0.3, 0.15, 0.06], // max 0.3
+    thickness: [1, 0.75, 0.5],
+    bounce: [1, 0.8, 0.7],
+    morph: [5, 20, 1],
+    soundcloudUrl: 'https://soundcloud.com/moai_music/rojo'
+  }, 
+  {
+    name: 'soul',
     bpm: 120,
     gradientColors: ['#fdbb2d', '#22c1c3'],    
     spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],

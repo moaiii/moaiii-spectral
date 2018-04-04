@@ -452,19 +452,19 @@ canvas {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
-  .gradient_45.--vovka {
+  .gradient_45.--boy {
     background: #86fde8;
     background: -webkit-linear-gradient(45deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -o-linear-gradient(45deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(45deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
     background: linear-gradient(45deg, #86fde8 25%, #acb6e5 75%, white 115%); }
-  .gradient_45.--rojo {
+  .gradient_45.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(45deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -o-linear-gradient(45deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(45deg), color-stop(25%, #ff6a00), color-stop(75%, #ee0979), color-stop(115%, white));
     background: linear-gradient(45deg, #ff6a00 25%, #ee0979 75%, white 115%); }
-  .gradient_45.--lisboa {
+  .gradient_45.--soul {
     background: #fdbb2d;
     background: -webkit-linear-gradient(45deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
     background: -o-linear-gradient(45deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
@@ -482,19 +482,19 @@ canvas {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
-  .gradient_135.--vovka {
+  .gradient_135.--boy {
     background: #86fde8;
     background: -webkit-linear-gradient(135deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -o-linear-gradient(135deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(135deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
     background: linear-gradient(135deg, #86fde8 25%, #acb6e5 75%, white 115%); }
-  .gradient_135.--rojo {
+  .gradient_135.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(135deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -o-linear-gradient(135deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(135deg), color-stop(25%, #ff6a00), color-stop(75%, #ee0979), color-stop(115%, white));
     background: linear-gradient(135deg, #ff6a00 25%, #ee0979 75%, white 115%); }
-  .gradient_135.--lisboa {
+  .gradient_135.--soul {
     background: #fdbb2d;
     background: -webkit-linear-gradient(135deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
     background: -o-linear-gradient(135deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
@@ -512,19 +512,19 @@ canvas {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
-  .gradient_225.--vovka {
+  .gradient_225.--boy {
     background: #86fde8;
     background: -webkit-linear-gradient(225deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -o-linear-gradient(225deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(225deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
     background: linear-gradient(225deg, #86fde8 25%, #acb6e5 75%, white 115%); }
-  .gradient_225.--rojo {
+  .gradient_225.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(225deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -o-linear-gradient(225deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(225deg), color-stop(25%, #ff6a00), color-stop(75%, #ee0979), color-stop(115%, white));
     background: linear-gradient(225deg, #ff6a00 25%, #ee0979 75%, white 115%); }
-  .gradient_225.--lisboa {
+  .gradient_225.--soul {
     background: #fdbb2d;
     background: -webkit-linear-gradient(225deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
     background: -o-linear-gradient(225deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
@@ -542,19 +542,19 @@ canvas {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
-  .gradient_315.--vovka {
+  .gradient_315.--boy {
     background: #86fde8;
     background: -webkit-linear-gradient(315deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -o-linear-gradient(315deg, #86fde8 25%, #acb6e5 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(315deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
     background: linear-gradient(315deg, #86fde8 25%, #acb6e5 75%, white 115%); }
-  .gradient_315.--rojo {
+  .gradient_315.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(315deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -o-linear-gradient(315deg, #ff6a00 25%, #ee0979 75%, white 115%);
     background: -webkit-gradient(linear, left top, left bottom, from(315deg), color-stop(25%, #ff6a00), color-stop(75%, #ee0979), color-stop(115%, white));
     background: linear-gradient(315deg, #ff6a00 25%, #ee0979 75%, white 115%); }
-  .gradient_315.--lisboa {
+  .gradient_315.--soul {
     background: #fdbb2d;
     background: -webkit-linear-gradient(315deg, #fdbb2d 25%, #22c1c3 75%, white 115%);
     background: -o-linear-gradient(315deg, #fdbb2d 25%, #22c1c3 75%, white 115%);

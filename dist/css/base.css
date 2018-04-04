@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Spectral+SC:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Spectral+SC:300,400");
 * {
   font-family: "Spectral SC", serif; }
 
@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5, p, a {
   grid-area: title;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
 
 .title-container {
   width: 75%;
@@ -177,6 +178,12 @@ svg.arrow-svg {
   justify-content: center;
   align-items: center;
   grid-area: share; }
+  @media (max-width: 768px) {
+    .share-container {
+      justify-content: space-around; } }
+  @media (max-width: 320px) {
+    .share-container {
+      justify-content: space-around; } }
 
 .share-icon {
   box-shadow: 0px 0px 0px #fff;
@@ -187,6 +194,9 @@ svg.arrow-svg {
   transition: all 0.5s ease-in; }
   .share-icon:hover ::before {
     color: #efefef; }
+  @media (max-width: 768px) {
+    .share-icon {
+      font-size: 2rem; } }
 
 .volume-controls {
   z-index: 101;
@@ -302,7 +312,21 @@ svg.arrow-svg {
     justify-content: center; }
 
 .empty {
-  grid-area: empty; }
+  grid-area: empty;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+.instructions {
+  margin: 0;
+  opacity: 1;
+  color: white;
+  transition: opacity 2s ease;
+  text-align: center; }
+  .instructions.hide {
+    transition: opacity 2s ease;
+    opacity: 0; }
 
 @-webkit-keyframes hover-bounce {
   0% {

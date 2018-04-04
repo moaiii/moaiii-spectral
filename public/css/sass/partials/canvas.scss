@@ -1,10 +1,10 @@
 //gradients 
-$gradient-vovka-a: #86fde8;
-$gradient-vovka-b: #acb6e5;
-$gradient-lisboa-a: #fdbb2d;
-$gradient-lisboa-b: #22c1c3;
-$gradient-rojo-a: #ff6a00;
-$gradient-rojo-b: #ee0979;
+$gradient-boy-a: #86fde8;
+$gradient-boy-b: #acb6e5;
+$gradient-soul-a: #fdbb2d;
+$gradient-soul-b: #22c1c3;
+$gradient-girl-a: #ff6a00;
+$gradient-girl-b: #ee0979;
 $gradient-none-a: #666;
 $gradient-none-b: #ccc;
 
@@ -122,16 +122,16 @@ canvas {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   
-  &.--vovka {
-    @include gradient(45deg, $gradient-vovka-a, $gradient-vovka-b);
+  &.--boy {
+    @include gradient(45deg, $gradient-boy-a, $gradient-boy-b);
   }
 
-  &.--rojo {
-    @include gradient(45deg, $gradient-rojo-a, $gradient-rojo-b);
+  &.--girl {
+    @include gradient(45deg, $gradient-girl-a, $gradient-girl-b);
   }
 
-  &.--lisboa {
-    @include gradient(45deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  &.--soul {
+    @include gradient(45deg, $gradient-soul-a, $gradient-soul-b);
   }
 }
 
@@ -147,16 +147,16 @@ canvas {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   
-  &.--vovka {
-    @include gradient(135deg, $gradient-vovka-a, $gradient-vovka-b);
+  &.--boy {
+    @include gradient(135deg, $gradient-boy-a, $gradient-boy-b);
   }
 
-  &.--rojo {
-    @include gradient(135deg, $gradient-rojo-a, $gradient-rojo-b);
+  &.--girl {
+    @include gradient(135deg, $gradient-girl-a, $gradient-girl-b);
   }
 
-  &.--lisboa {
-    @include gradient(135deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  &.--soul {
+    @include gradient(135deg, $gradient-soul-a, $gradient-soul-b);
   }
 }
 
@@ -172,16 +172,16 @@ canvas {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 
-  &.--vovka {
-    @include gradient(225deg, $gradient-vovka-a, $gradient-vovka-b);
+  &.--boy {
+    @include gradient(225deg, $gradient-boy-a, $gradient-boy-b);
   }
 
-  &.--rojo {
-    @include gradient(225deg, $gradient-rojo-a, $gradient-rojo-b);
+  &.--girl {
+    @include gradient(225deg, $gradient-girl-a, $gradient-girl-b);
   }
 
-  &.--lisboa {
-    @include gradient(225deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  &.--soul {
+    @include gradient(225deg, $gradient-soul-a, $gradient-soul-b);
   }
 }
 
@@ -197,16 +197,16 @@ canvas {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 
-  &.--vovka {
-    @include gradient(315deg, $gradient-vovka-a, $gradient-vovka-b);
+  &.--boy {
+    @include gradient(315deg, $gradient-boy-a, $gradient-boy-b);
   }
 
-  &.--rojo {
-    @include gradient(315deg, $gradient-rojo-a, $gradient-rojo-b);
+  &.--girl {
+    @include gradient(315deg, $gradient-girl-a, $gradient-girl-b);
   }
 
-  &.--lisboa {
-    @include gradient(315deg, $gradient-lisboa-a, $gradient-lisboa-b);
+  &.--soul {
+    @include gradient(315deg, $gradient-soul-a, $gradient-soul-b);
   }
 }
 

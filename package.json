@@ -5,12 +5,16 @@
   "scripts": {
     "build": "ENV=development browserify -t envify public/js/modules/init.js -o public/js/bundle.js",
     "build:production": "ENV=production browserify -t envify -t uglifyify public/js/modules/init.js -o dist/js/bundle.js; gulp production",
-    "start": "concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
+    "start": "npm run build; concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
     "start:server": "nodemon ./bin/www",
     "start:js": "npm run watch",
     "start:styles": "gulp",
     "start:production": "npm run build:production; npm run start:server",
-    "watch": "watchify public/js/modules/init.js -o public/js/bundle.js --debug --verbose"
+    "watch": "watchify public/js/modules/init.js -o public/js/bundle.js --debug --verbose",
+    "test": "jest --watch --notify"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./tests/setup.test.js"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
@@ -38,6 +42,7 @@
     "gulp-sourcemaps": "^2.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.11",
+    "jest": "^22.4.3",
     "jshint": "^2.9.4",
     "morgan": "~1.7.0",
     "nodemon": "^1.14.3",
@@ -48,6 +53,7 @@
     "yargs": "^10.0.3"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "puppeteer": "^1.2.0"
   }
 }
