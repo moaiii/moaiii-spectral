@@ -18,15 +18,21 @@
   "dependencies": {
     "autoprefixer": "^6.5.3",
     "body-parser": "~1.15.2",
-    "browserify": "^14.5.0",
     "concurrently": "^3.5.1",
     "cookie-parser": "~1.4.3",
     "cross-spawn": "^5.1.0",
-    "debug": "~2.2.0",
-    "dotenv": "^4.0.0",
-    "ejs": "~2.5.2",
-    "envify": "^4.1.0",
     "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "ejs": "~2.5.2",
+    "serve-favicon": "~2.3.0",
+    "watchify": "^3.9.0",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "envify": "^4.1.0",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.14.3",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
@@ -41,17 +47,11 @@
     "gulp-sourcemaps": "^2.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.11",
-    "jest": "^22.4.3",
-    "jshint": "^2.9.4",
-    "morgan": "~1.7.0",
-    "nodemon": "^1.14.3",
     "postcss-scss": "^0.4.0",
-    "serve-favicon": "~2.3.0",
     "uglifyify": "^4.0.5",
-    "watchify": "^3.9.0",
-    "yargs": "^10.0.3"
-  },
-  "devDependencies": {
+    "jest": "^22.4.3",
+    "debug": "~2.2.0",
+    "jshint": "^2.9.4",
     "gulp": "^3.9.1",
     "puppeteer": "^1.2.0"
   }

@@ -19,10 +19,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-if(process.env.ENV === 'development') {
-  app.use('/public', express.static(__dirname + '/public'));
-} else {
+if(process.env.ENV === 'production') {
   app.use('/public', express.static(__dirname + '/dist'));
+} else {
+  app.use('/public', express.static(__dirname + '/public'));
 }
 
 app.use(require('./routes/app'));
