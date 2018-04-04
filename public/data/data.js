@@ -5,7 +5,7 @@ module.exports = [
     gradientColors: ['#fdbb2d', '#22c1c3'],
     spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],
     size: [0.5, 0.4, 0.3],
-    thickness: [1, 0.75, 0.5],
+    thickness: [2, 1.5, 1],
     bounce: [0.25, 0.5, 1],
     morph: [1, 4, 7],
     soundcloudUrl: 'https://soundcloud.com/moai_music/intro'
@@ -13,7 +13,7 @@ module.exports = [
   {
     name: 'boy',
     bpm: 120,
-    gradientColors: ['#2657eb', '#de6161'],
+    gradientColors: ['#56CCF2', '#56CCF2'],
     spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],
     size: [0.35, 0.15, 0.27], // max 0.3
     thickness: [1, 0.75, 0.5],

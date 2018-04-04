@@ -453,11 +453,11 @@ canvas {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
   .gradient_45.--boy {
-    background: #86fde8;
-    background: -webkit-linear-gradient(45deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -o-linear-gradient(45deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -webkit-gradient(linear, left top, left bottom, from(45deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
-    background: linear-gradient(45deg, #86fde8 25%, #acb6e5 75%, white 115%); }
+    background: #56CCF2;
+    background: -webkit-linear-gradient(45deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -o-linear-gradient(45deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -webkit-gradient(linear, left top, left bottom, from(45deg), color-stop(25%, #56CCF2), color-stop(75%, #56CCF2), color-stop(115%, white));
+    background: linear-gradient(45deg, #56CCF2 25%, #56CCF2 75%, white 115%); }
   .gradient_45.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(45deg, #ff6a00 25%, #ee0979 75%, white 115%);
@@ -483,11 +483,11 @@ canvas {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
   .gradient_135.--boy {
-    background: #86fde8;
-    background: -webkit-linear-gradient(135deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -o-linear-gradient(135deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -webkit-gradient(linear, left top, left bottom, from(135deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
-    background: linear-gradient(135deg, #86fde8 25%, #acb6e5 75%, white 115%); }
+    background: #56CCF2;
+    background: -webkit-linear-gradient(135deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -o-linear-gradient(135deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -webkit-gradient(linear, left top, left bottom, from(135deg), color-stop(25%, #56CCF2), color-stop(75%, #56CCF2), color-stop(115%, white));
+    background: linear-gradient(135deg, #56CCF2 25%, #56CCF2 75%, white 115%); }
   .gradient_135.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(135deg, #ff6a00 25%, #ee0979 75%, white 115%);
@@ -513,11 +513,11 @@ canvas {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
   .gradient_225.--boy {
-    background: #86fde8;
-    background: -webkit-linear-gradient(225deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -o-linear-gradient(225deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -webkit-gradient(linear, left top, left bottom, from(225deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
-    background: linear-gradient(225deg, #86fde8 25%, #acb6e5 75%, white 115%); }
+    background: #56CCF2;
+    background: -webkit-linear-gradient(225deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -o-linear-gradient(225deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -webkit-gradient(linear, left top, left bottom, from(225deg), color-stop(25%, #56CCF2), color-stop(75%, #56CCF2), color-stop(115%, white));
+    background: linear-gradient(225deg, #56CCF2 25%, #56CCF2 75%, white 115%); }
   .gradient_225.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(225deg, #ff6a00 25%, #ee0979 75%, white 115%);
@@ -543,11 +543,11 @@ canvas {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
   .gradient_315.--boy {
-    background: #86fde8;
-    background: -webkit-linear-gradient(315deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -o-linear-gradient(315deg, #86fde8 25%, #acb6e5 75%, white 115%);
-    background: -webkit-gradient(linear, left top, left bottom, from(315deg), color-stop(25%, #86fde8), color-stop(75%, #acb6e5), color-stop(115%, white));
-    background: linear-gradient(315deg, #86fde8 25%, #acb6e5 75%, white 115%); }
+    background: #56CCF2;
+    background: -webkit-linear-gradient(315deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -o-linear-gradient(315deg, #56CCF2 25%, #56CCF2 75%, white 115%);
+    background: -webkit-gradient(linear, left top, left bottom, from(315deg), color-stop(25%, #56CCF2), color-stop(75%, #56CCF2), color-stop(115%, white));
+    background: linear-gradient(315deg, #56CCF2 25%, #56CCF2 75%, white 115%); }
   .gradient_315.--girl {
     background: #ff6a00;
     background: -webkit-linear-gradient(315deg, #ff6a00 25%, #ee0979 75%, white 115%);
