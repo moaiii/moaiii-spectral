@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "ENV=development browserify -t envify public/js/modules/init.js -o public/js/bundle.js",
-    "start": "npm run build; concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
-    "start:server": "nodemon ./bin/www",
+    "build": "ENV=development browserify -t envify public/js/modules/init.js -o public/js/bundle.js; npm run start:styles; npm run start:js",
+    "start": "nodemon ./bin/www",
+    "start:development": "concurrently  \"npm run start:styles\" \"npm run start:js\" \"npm run start:server\"",
     "start:js": "npm run watch",
     "start:styles": "gulp",
     "watch": "watchify public/js/modules/init.js -o public/js/bundle.js --debug --verbose",
