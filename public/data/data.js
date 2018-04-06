@@ -13,7 +13,7 @@ module.exports = [
   {
     name: 'boy',
     bpm: 120,
-    gradientColors: ['#56CCF2', '#56CCF2'],
+    gradientColors: ['#43cea2', '#185a9d'],
     spectrumColors: ['#EAEAEA', '#DBDBDB', '#F2F2F2'],
     size: [0.35, 0.15, 0.27], // max 0.3
     thickness: [1, 0.75, 0.5],
